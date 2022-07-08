@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web para centro veterinario, felinos y caninos">
+    <meta name="keywords" content="mascotas, perros, gatos, centro veterinario, pets, cita veterinaria">
+    <meta name="author" content="Madera y Gironza Ltda">
+    <link rel="shortcut icon" href="img/mascotasIcon.png" type="image/x-icon">
+    <title>Centro Veterinario</title>
+
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+
+    <!--Font Google Oswal-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img class="banner" src="/img/banner.png">
+    </header>
+    
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li>
+                <a class="nav-link active" aria-current="page" href="/html/index.html">inicio</a>
+            </li>
+            <li>
+                <a class="nav-link" href="/html/servicios.html">Servicios</a>
+            </li>
+            <li>
+                <a class="nav-link" href="/html/productos.html">Productos</a>
+            </li>
+            <li>
+                <a class="nav-link" href="/html/guarderia.html">Guardería</a>
+            </li>
+            <li>
+                <a class="nav-link" href="/html/promociones.html">Promociones</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <article class="art1"> 
+                <div class="text1">
+                    <h2>Cuidados y educación para su perro</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam fugit sed delectus! Distinctio totam iure, saepe vel, ullam dolorem ut doloremque cum soluta dolores quas optio maxime nulla, itaque iusto.</p>
+                    <a href="#">Leer más...<i class="fas fa-angle-double-right"></I></a>
+                </div>               
+                <img class="img1" src="/img/article1.jpg" alt="imagen 1">
+            </article>
+    
+            <article class="art2">
+                <img class="img2" src="/img/article2.jpg" alt="news 1">
+                    <h2>Salir de viaje con su mascota</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam fugit sed delectus! Distinctio totam iure, saepe vel, ullam dolorem ut doloremque cum soluta dolores quas optio maxime nulla, itaque iusto.</p>
+                    <a href="#">Leer más...<i class="fas fa-angle-double-right"></I></a>
+            </article>
+        </div>
+        
+        <aside>
+            <form>
+                <header class="headerForm">
+                    <h4>Agenda tu Cita</h4>
+                </header>
+                
+                <div class="formulario">
+                    <div class="grupo">
+                        <label>Mascota: 
+                            <input type="name" placeholder="Ingresa nombre" required>
+                        </label>
+                    </div>
+                    
+                    <div class="grupo">
+                        <label>Edad: 
+                            <input class="edad" type="number" required>
+                        </label>
+                    </div>
+                    
+                    <div class="grupo">
+                        <label>Raza: 
+                            <input type="text" placeholder="ingrese la raza">
+                        </label>
+                    </div>
+                    
+                    <div class="grupo">
+                        <label>Fecha: 
+                            <input type="date" required> 
+                        </label>
+                    </div>
+                    
+                    <div class="grupo">
+                        <label>Hora: 
+                            <input type="time" required>
+                        </label>
+                    </div>
+                    
+                    <div class="grupo">
+                        <label>Amo: 
+                            <input type="text" placeholder="ingrese nombre" required>
+                        </label>
+                    </div>                   
+                </div>
+                
+                <div class="footerForm">
+                    <button class="btn" type="submit">VALIDAR CITA</button>
+                </div>
+            </form>
+        </aside>
+    </main>
+
+    <!--Redes Sociales-->
+    <section class="social">
+        <p>Siguénos en redes sociales</p>
+        <div class="links">
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <small>&copy; 2020, Madera & Gironza Ltda.</small>
+        <p>Análisis y Desarrollo de Sistemas de Información - ADSI 2022</p>
+        <img src="/img/senaLogo.png" alt="Sena Logo">
+    </footer>
+</body>
+</html>

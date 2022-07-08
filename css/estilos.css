@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Definicion de colores en la pagina*/
+:root {
+	--fondoPrimario: #fefae0;
+	--colorOscuro: #001524;
+	--colorClaro: #15616d;
+	--colorResaltar: #ff7d00;
+    --colorSecundario: #78290f;
+    --colorLetrasClaras: #ffffff;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--fondoPrimario);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorOscuro);
+    
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*Barra de Navegación*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    background-color:var(--colorClaro);
+    color: var(--colorLetrasClaras);
+    width: 100%;
+}
+
+.nav-list{
+    display: inline-flex;
+    font-size: 1.3rem;
+}
+
+.nav-list li{
+    padding: 0px;
+}
+
+.navbar .active{
+    border-bottom: 5px solid var(--colorOscuro);
+}
+
+.nav-list li a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    padding: 14px 30px 14px 30px;
+    color: var(--colorLetrasClaras);
+}
+
+.nav-list li a:hover {
+    background-color: var(--colorResaltar);
+    cursor: pointer;
+}
+
+/*Contenido Principal*/
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+}
+
+.container {
+    width: 70%;
+}
+
+article {
+    display: block;
+    margin:10px;
+    padding:20px;
+    border-radius: 1.5rem;
+    border: 1px solid var(--colorSecundario);
+    background-color: #fff3b0;
+    width: fit-content;
+}
+
+article img {
+    width: 200px;    
+    border-radius: 1rem;
+    border: 0.1rem solid var(--colorOscuro);
+}
+
+.art2 .img2 {
+    text-align: center;
+}
+
+aside {
+    width: 30%;
+}
+
+/*Formulario Agendar Cita*/
+form {
+    display: block;
+    background-color: var(--colorClaro);
+    height: fit-content;
+	width: 95%;
+    margin-top: 10px;
+	border-radius: 1rem;
+    border-color: var(--colorOscuro);
+}
+
+form .headerForm {
+    background-color: var(--colorOscuro);
+    color: var(--colorLetrasClaras);
+    padding: 10px;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; 
+}
+
+form .formulario{
+    padding: 0.5rem;
+}
+
+form .formulario .grupo label {
+    display: flex;    
+}
+
+form .grupo input {
+	height: 25px;
+	width: 80%;
+	border-radius: 3px;
+	border: none;
+	padding: 5px;
+    margin: 5px;
+	border: 1px solid var(--colorOscuro);
+}
+
+form .grupo input:focus{
+    border: 3px solid var(--colorOscuro);
+}
+
+form .footerForm {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.btn {
+	background: var(--colorResaltar);
+	padding: 20px;
+	border: none;
+	cursor: pointer;
+	color: var(--colorLetrasClaras);
+	border-radius: 5px;
+	margin-bottom: 15px;
+	transition: .3s ease all;
+}
+
+/*Redes Sociales*/
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 20px;
+}
+
+.links a i {
+    font-size: 2.5rem;
+    color: var(--colorResaltar);
+}
+
+/*Pie de página*/
+footer {
+    background-color: var(--colorOscuro);
+    color: var(--colorLetrasClaras);
+    font-size: 14px;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    text-align: center;
+    bottom: 0;
+ }
+
+ footer img {
+     width: 5%;
+ }
+ 
